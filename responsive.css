@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+  header {
+    justify-content: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 6px;
+    margin-right: 10px;
+  }
+
+  header > nav > ul > li > select {
+    padding: 2px;
+    width: 100px;
+    font-size: 1em;
+  }
+
+  header > nav > ul > li > a {
+    margin-top: 2px;
+    padding: 4px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main > section#firstSection > h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  main > section#firstSection > p {
+    font-size: 1em;
+  }
+
+  main > section#firstSection > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  main > section#firstSection > div > div > button {
+    width: 120px;
+    padding: 10px;
+    font-size: 1.3em;
+  }
+
+  main > section#secondSection {
+    flex-direction: column;
+  }
+
+  main > section#secondSection > div {
+    flex-direction: column;
+  }
+
+  main > section#secondSection > div > aside > button {
+    margin-top: 20px;
+  }
+
+  #iconPopcorn {
+    margin-right: 100px;
+  }
+
+  main > section#thirdSection > div.movies > nav > ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main > section#thirdSection > div.movies > nav > ul > li > img {
+    width: 135px;
+  }
+
+  #subscribe {
+    margin: 0;
+    padding: 0;
+    font-size: 5px;
+  }
+
+  div.reasonsToSubscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.reasonsToSubscribe div {
+    margin-top: 5px;
+    width: 90%;
+  }
+
+  div.questions div {
+    width: 90%;
+  }
+
+  div.questions div > button {
+    padding: 6px;
+    font-size: 1.2em;
+    justify-content: space-between;
+  }
+
+  main > section#fourthSection > aside > nav > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main > section#fourthSection > aside > nav > div > input {
+    width: 90%;
+  }
+
+  #fLangOptions {
+    margin-left: 30px;
+  }
+
+  #gflix {
+    margin-left: 30px;
+  }
+
+  footer > div.footerItens {
+    flex-direction: column;
+  }
+}

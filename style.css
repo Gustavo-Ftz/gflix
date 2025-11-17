@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("src/images/background.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 50px;
+  color: #e50914;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 15px;
+  max-width: 80%;
+}
+
+header > nav > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header > nav > ul > li > select {
+  padding: 5px;
+  width: 120px;
+  text-align: center;
+  font-size: 1.05em;
+  background-color: black;
+  color: #ffffff;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #c11119;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+main > section#firstSection {
+  max-width: 585px;
+  margin-top: 95px;
+  text-align: center;
+}
+
+main > section#firstSection > h2 {
+  font-weight: 900;
+  font-size: 56px;
+}
+
+main > section#firstSection > p {
+  margin-top: 15px;
+  font-size: 1.3em;
+}
+
+main > section#firstSection > div {
+  margin-top: 40px;
+}
+
+main > section#firstSection > div > div {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+main > section#firstSection > div > div > input {
+  width: 74.5%;
+  height: 50px;
+  font-size: 1.2em;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  border: 1px solid #5f5f60;
+  background-color: black;
+}
+
+main > section#firstSection > div > div > input::placeholder {
+  color: #b9b9b9;
+}
+
+main > section#firstSection > div > div > button {
+  width: 25.5%;
+  font-size: 1.5em;
+  background-color: #e50914;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+main > section#secondSection {
+  margin-top: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  transition: transform 0.3s ease;
+}
+
+main > section#secondSection:hover {
+  transform: scale(1.03, 1.03);
+}
+
+main > section#secondSection > div > div > h3 {
+  font-weight: normal;
+}
+
+main > section#secondSection > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #251734, #191a3d);
+}
+
+main > section#secondSection > div:hover {
+  background-image: linear-gradient(to right, #472465, #1a193c);
+}
+
+main > section#secondSection > div > aside > button {
+  background-color: #3b3c62;
+  color: #ffffff;
+  margin-right: 15px;
+  font-size: 1em;
+  width: 100px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+#iconPopcorn {
+  width: 75px;
+  margin-right: 15px;
+}
+
+main > section#thirdSection {
+  margin-top: 60px;
+  width: 100%;
+  background-color: black;
+}
+
+img.icons {
+  width: 60px;
+}
+
+img#iconSub1 {
+  margin-top: 90px;
+  margin-left: 170px;
+}
+
+img#iconSub2 {
+  margin-top: 95px;
+  margin-left: 190px;
+}
+
+img#iconSub3 {
+  margin-top: 110px;
+  margin-left: 190px;
+}
+
+img#iconSub4 {
+  margin-top: 40px;
+  margin-left: 190px;
+}
+
+main > section#thirdSection > div.movies > h2 {
+  padding-top: 15px;
+  margin-left: 130px;
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 60px;
+}
+
+main > section#thirdSection > div.movies > nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  max-width: 1100px;
+  justify-content: space-between;
+}
+
+main > section#thirdSection > div.movies > nav > ul > li {
+  margin-top: 38px;
+}
+
+main > section#thirdSection > div.movies > nav > ul > li > img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+main > section#thirdSection > div.movies > nav > ul > li > img:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
+
+div.reasonsToSubscribe {
+  display: flex;
+  max-width: 1160px;
+  margin: auto;
+  gap: 20px;
+}
+
+div.reasonsToSubscribe div {
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  background-image: linear-gradient(to bottom, #192043, #1e1425);
+}
+
+div.reasonsToSubscribe div > h3 {
+  font-weight: normal;
+  font-size: 25px;
+}
+
+div.reasonsToSubscribe div > p {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #bbbcc6;
+}
+
+main > section#thirdSection > div.questions {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div.questions div {
+  display: flex;
+  width: 1155px;
+  height: 90px;
+  margin: auto;
+}
+
+div.questions div > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  padding-left: 25px;
+  background-color: #2d2d2d;
+  border: none;
+  color: #ffffff;
+  font-size: 1.4em;
+  transition-duration: 0.3s;
+}
+
+div.questions div > button:hover {
+  cursor: pointer;
+  background-color: #414141;
+}
+
+div.questions div > button > span {
+  margin-right: 20px;
+  font-size: 50px;
+}
+
+main > section#thirdSection > div.questions > h3 {
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 75px;
+  margin-left: 130px;
+}
+
+main > section#fourthSection {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+}
+
+main > section#fourthSection > aside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  text-align: center;
+}
+
+main > section#fourthSection > aside > nav > div {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+main > section#fourthSection > aside > nav > div > input {
+  padding: 13px;
+  border: none;
+  border: 1px solid #5f5f60;
+  background-color: black;
+  width: 600px;
+  font-size: 1.1em;
+  border-radius: 4px;
+}
+
+main > section#fourthSection > aside > nav > div > input::placeholder {
+  color: #b9b9b9;
+}
+
+main > section#fourthSection > aside > nav > div {
+  margin-top: 15px;
+}
+
+main > section#fourthSection > aside > nav > div > button {
+  padding: 12px;
+  width: 150px;
+  font-size: 1.3em;
+  background-color: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+main > section#fourthSection > p {
+  margin-top: 80px;
+  text-align: left;
+  margin-left: 130px;
+}
+
+.pGflix {
+  color: #b3b3b3;
+}
+
+#fLangOptions {
+  margin-top: 50px;
+  margin-left: 125px;
+  padding: 4px;
+  font-size: 1.1em;
+  text-align: center;
+  width: 160px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+#gflix {
+  margin-top: 50px;
+  margin-left: 125px;
+  margin-bottom: 90px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+footer > div.footerItens {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: 35px;
+}
+
+footer > div.footerItens > div {
+  display: flex;
+  gap: 20px;
+}
+
+footer > div.footerItens > div > nav > ul > li > a {
+  color: #b3b3b3;
+}
+
+footer > div.footerItens > div > nav > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#myCredits {
+  text-align: center;
+  padding: 10px;
+}
+
+#myCredits > a {
+  font-style: italic;
+  color: white;
+}
